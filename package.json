@@ -1,0 +1,77 @@
+{
+  "name": "repo-scribe-vs",
+  "displayName": "Repo-Scribe-VS",
+  "description": "AI Commit Assistant with RAG",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "repo-scribe.generate",
+        "title": "✨ Repo-Scribe: Generate Commit"
+      },
+      {
+        "command": "repo-scribe.reindex",
+        "title": "🧠 Repo-Scribe: Re-learn Documentation"
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "command": "repo-scribe.generate",
+          "group": "navigation",
+          "when": "scmProvider == git"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Repo-Scribe AI",
+      "properties": {
+        "repoScribe.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Google Gemini API Key."
+        },
+        "repoScribe.docsFolder": {
+          "type": "string",
+          "default": "docs",
+          "description": "Name of the folder containing markdown docs (relative to project root)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.1",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.1",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}

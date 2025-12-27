@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Build Output
+out/
+dist/
+*.vsix
+
+# VS Code Extension specific
+.vscode-test/
+
+# Local Environment & Secrets
+.env
+
+# The Local RAG Memory (User specific, do not commit)
+.vscode/repo-scribe-memory.json
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log
+yarn-error.log
