@@ -155,7 +155,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🐛 [Report a Bug](https://github.com/sasidharakurathi/repo-scribe/issues)
 - 💡 [Request a Feature](https://github.com/sasidharakurathi/repo-scribe/issues)
-- 📧 Email: your.email@example.com
+- 📧 Email: 22kt1a0595@gmail.com
 
 ---
 
