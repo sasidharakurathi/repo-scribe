@@ -1,8 +1,14 @@
 {
-  "name": "repo-scribe-vs",
-  "displayName": "Repo-Scribe-VS",
-  "description": "AI Commit Assistant with RAG",
-  "version": "0.0.1",
+  "name": "repo-scribe-lite",
+  "displayName": "Repo-Scribe: AI Commit Assistant",
+  "description": "Stop writing commits. Let AI and RAG memory do it for you.",
+  "version": "1.0.0",
+  "publisher": "SasidharAkurathi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasidharakurathi/repo-scribe"
+  },
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.107.0"
   },

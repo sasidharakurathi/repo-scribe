@@ -4,7 +4,7 @@
 > Repo-Scribe uses Google gemma-3-27b + RAG (Retrieval-Augmented Generation) to write context-aware, professional commit messages directly inside VS Code.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)  
-![Version](https://img.shields.io/badge/version-0.0.1-green.svg)  
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg)  
 
 ---
 
@@ -21,7 +21,17 @@ Unlike other AI commit tools that just look at your code diff, **Repo-Scribe rea
 
 ## 📦 Installation
 
-### Option 1: Install from VSIX (Recommended)
+### Option 1: Install from Marketplace (Recommended)
+
+The easiest way to get Repo-Scribe is directly from the Visual Studio Marketplace.
+
+1. Open **VS Code**.
+2. Go to the **Extensions** view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+3. Search for **"Repo-Scribe Lite"**.
+4. Click **Install**.
+5. 👉 **[Direct Link to Marketplace](https://marketplace.visualstudio.com/items?itemName=SasidharAkurathi.repo-scribe-lite)**
+
+### Option 2: Install from VSIX (Manual)
 
 1. Download the latest `.vsix` release from the [Releases page](https://github.com/sasidharakurathi/repo-scribe/releases).  
 2. Open VS Code Extensions (`Ctrl+Shift+X` or `Cmd+Shift+X` on Mac).  
